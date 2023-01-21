@@ -17,11 +17,12 @@
     "update-version-file": "const-version ./package.json ./src/version.js",
     "version": "npm run update-version-file && npm run build && npm run add-build-to-vcs",
     "postpublish": "npm run website-update",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d demo/dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adhish09/floor-plan.git"
+    "url": "git+https://github.com/adhish09/flooring.git"
   },
   "keywords": [
     "floorplanner",
@@ -37,12 +38,11 @@
     "interface",
     "component"
   ],
- 
- 
   "dependencies": {
     "@mapbox/react-range": "0.0.7",
     "area-polygon": "1.0.1",
     "convert-units": "2.3.4",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "3.2.0",
     "immutable": "3.8.2",
     "immutablediff": "0.4.4",
@@ -67,7 +67,6 @@
     "const-version": "2.0.0",
     "cross-env": "5.2.0",
     "file-loader": "3.0.1",
-    "gh-pages": "2.0.1",
     "immutable-devtools": "0.1.4",
     "react": "16.8.5",
     "react-container-dimensions": "1.4.1",
