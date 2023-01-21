@@ -39,7 +39,6 @@
   ],
  
  
-  "homepage": "https://github.com/adhish09/floor-plan",
   "dependencies": {
     "@mapbox/react-range": "0.0.7",
     "area-polygon": "1.0.1",
